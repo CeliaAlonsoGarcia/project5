@@ -1,1 +1,32 @@
+.container {
 
+    border: solid;
+    height: 15rem;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.emojis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hand {
+    height:5rem;
+    width: auto;
+    margin: 1rem 1rem 0rem;
+    padding-bottom:;
+    
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.player {
+    text-align: center; 
+    margin: 1.5rem;
+    font-size: 20px;
+}
