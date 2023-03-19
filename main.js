@@ -22,7 +22,7 @@ let resultDisplay
 // 3. for the result comment to be updated
 
 buttonsChoice.forEach(buttonsChoice => buttonsChoice.addEventListener("click", (e) => {
-    userChoice = e.target.innerHTML
+    userChoice = e.target.value
     playerChoiceContainer.innerHTML = userChoice
     console.log("clicked")
     generateComputerChoice() 
