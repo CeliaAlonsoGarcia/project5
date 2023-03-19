@@ -1,32 +1,51 @@
-.container {
 
+
+
+.game-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid;
     height: 15rem;
     width: 25rem;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
 }
 
-.emojis {
+.button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.hand {
-    height:5rem;
-    width: auto;
+
+button {
+    height: 10rem;
+    width: 10rem;
     margin: 1rem 1rem 0rem;
     padding-bottom:;
-    
-
+    font-size: 70px;
+         
 }
 
 h1 {
     text-align: center;
-}
+    margin: 5rem;
+    font-size: 40px;
 
-.player {
-    text-align: center; 
-    margin: 1.5rem;
-    font-size: 20px;
+}
+#instructions {
+    text-align: center;
+    font-size: 30px;
+}
+#result-display {
+    font-size: 30px;
+    text-align: center;
 }
