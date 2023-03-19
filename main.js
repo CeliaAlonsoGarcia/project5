@@ -30,8 +30,12 @@ function generateComputerChoice (){
     computerChoiceContainer.innerHTML = computerChoice
 }
 
+// if statement to update the result announcement
+if (titleInput.value == "" || yearInput.value == "" || plotInput.value == "" || ratingInput.value == "" || runtimeInput.value == "") {
+  alert("Ensure you input a value in all fields!");
+} else {
 
-
+}
 
 
 
