@@ -6,13 +6,15 @@ const playerChoiceContainer = document.querySelector("#user-choice");
 console.log(playerChoiceContainer);
 const computerChoiceContainer = document.querySelector("#computer-choice");
 console.log(computerChoiceContainer);
-const result = document.querySelector("#result");
-console.log(result);
+const resultDisplay = document.querySelector("#resultDisplay");
+
 const buttonsChoice = document.querySelectorAll(".choiceButton");
 console.log(buttonsChoice);
 let userChoice
 let computerChoice
-let resultDisplay
+let result
+
+
 
 
 // fuction for the player to click on one button and the choice to be displayed.
@@ -30,24 +32,104 @@ buttonsChoice.forEach(buttonsChoice => buttonsChoice.addEventListener("click", (
 
 }))
 
+
 // function to generate the random choice
 function generateComputerChoice (){
-    const randomChoice = Math.floor(Math.random() * 3)
-    computerChoice = buttonsChoice[randomChoice].value;
-    computerChoiceContainer.innerHTML = computerChoice}
+    const randomChoice = Math.floor(Math.random() * 3) + 1
 
-    
-function updateResult () {
-
-
-// if statement to update the result announcement
-    if (computerChoice === userChoice) {result.innerHTML = "It's a draw"}
-    else if (computerChoice === "rock" && userChoice === "scicssors") {result.innerHTML = "Computer wins"}
-    else if (computerChoice === "paper" && userChoice === "rock") {result.innerHTML = "Computer wins"}
-    else if (computerChoice === "scissors" && userChoice === "paper") {result.innerHTML = "Computer wins"}
-    else {result.innerHTML = "You win"}
+    if (randomChoice === 1) {
+        computerChoice = "✊"
     }
+    if (randomChoice === 2) {
+        computerChoice = "✋"
+    }
+    if (randomChoice === 3) {
+        computerChoice = "✌️"
+    }
+
+    computerChoiceContainer.innerHTML = computerChoice
+}
+
+
+function updateResult() {
+    if (computerChoice === userChoice) {
+      result = "It's a draw";
+    } else if (computerChoice === "✊" && userChoice === "✌️") {
+      result = "Computer won";
+    } else if (computerChoice === "✋" && userChoice === "✊") {
+      result = "Computer won";
+    } else if (computerChoice === "✌️" && userChoice === "✋") {
+      result = "Computer won";
+    } else  { result = "You won!"
+    }
+    resultDisplay.innerHTML = result
+  }
+
+//   function updateResult() {
+//     if (computerChoice === userChoice) {
+//       result = "It's a draw";
+//     } else if (computerChoice === "rock" && userChoice === "scissors") {
+//       result = "Computer wins";
+//     } else if (computerChoice === "paper" && userChoice === "rock") {
+//       result = "Computer wins";
+//     } else if (computerChoice === "scissors" && userChoice === "paper") {
+//       result = "Computer wins";
+//     } else if (computerChoice === "scissors" && userChoice === "rock") {
+//       result = "You win";
+//     } else if (computerChoice === "rock" && userChoice === "paper") {
+//       result = "You win";
+//     } else if (computerChoice === "paper" && userChoice === "scissors") {
+//       result = "You win";
+//     }
+//     resultDisplay.innerHTML = result
+//   }
+
     
+    // function updateResult() {
+    //     if (computerChoice === userChoice) {
+    //       result = "It's a draw";
+    //     } else if (computerChoice === "rock" && userChoice === "scissors") {
+    //       result = "Computer wins";
+    //     } else if (computerChoice === "paper" && userChoice === "rock") {
+    //       result = "Computer wins";
+    //     } else if (computerChoice === "scissors" && userChoice === "paper") {
+    //       result = "Computer wins";
+    //     } else if (computerChoice === "scissors" && userChoice === "rock") {
+    //       result = "You win";
+    //     } else if (computerChoice === "rock" && userChoice === "paper") {
+    //       result = "You win";
+    //     } else if (computerChoice === "paper" && userChoice === "scissors") {
+    //       result = "You win";
+    //     }
+    //     resultDisplay.innerHTML = result
+    //   }
+
+
+
+// // function to generate the random choice
+// function generateComputerChoice (){
+//     const randomChoice = Math.floor(Math.random() * 3) + 1
+//     computerChoice = buttonsChoice[randomChoice].value;
+//     computerChoiceContainer.innerHTML = computerChoice}
+
+    
+//     function updateResult() {
+//         if (computerChoice === userChoice) {
+//           result.innerHTML = "It's a draw";
+//         } else if (computerChoice === "rock" && userChoice === "scissors") {
+//           result.innerHTML = "Computer wins";
+//         } else if (computerChoice === "paper" && userChoice === "rock") {
+//           result.innerHTML = "Computer wins";
+//         } else if (computerChoice === "scissors" && userChoice === "paper") {
+//           result.innerHTML = "Computer wins";
+//         } else if (computerChoice === "scissors" && userChoice === "rock") {
+//           result.innerHTML = "You win";
+//         } else if (computerChoice === "rock" && userChoice === "paper") {
+//           result.innerHTML = "You win";
+//         } else if (computerChoice === "paper" && userChoice === "scissors") {
+//           result.innerHTML = "You win";
+//         }
+//       }
 
 
 
