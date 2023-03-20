@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        
         <title>Rock, Paper, Scissors Game</title>
     </head>
     <body>
@@ -12,21 +13,23 @@
             <h1> Rock, Paper, Scissors</h1>
         </header>
 
-        <p id="instructions">Click on a hand to start playing</p>
+        <h2 id="instructions">CLICK ON A HAND TO START PLAYING</h2>
         <div class="game-display">
-
+       
+            <div class="container"> 
+                <h3>You chose:</h3>
+                <p id="user-choice" class="display-choice">  </p>
+            </div>
+            <h3 class="vs">VS</h3>
             <div class="container">
                 <h3>Computer chose:</h3>
-                <h3 id="computer-choice" class="display-choice"> </h3>
+                <p id="computer-choice" class="display-choice"> </p>
             </div>
                 
-            <div class="container"> 
-                <h3>You chose:</h3> 
-                <h3 id="user-choice" class="display-choice">  </h3>
-            </div>
+           
            
         </div>
-        <h3 id="result-display">Result: <span id="resultDisplay"></span></h3>
+        <h2 id="result-display">Result:  <span id="resultDisplay"></span></h2>
     
      
         <div class="button-container">

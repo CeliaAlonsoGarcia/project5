@@ -53,36 +53,17 @@ function generateComputerChoice (){
 
 function updateResult() {
     if (computerChoice === userChoice) {
-      result = "It's a draw";
+      result = "It's a draw!";
     } else if (computerChoice === "✊" && userChoice === "✌️") {
-      result = "Computer won";
+      result = "You lost!";
     } else if (computerChoice === "✋" && userChoice === "✊") {
-      result = "Computer won";
+      result = "You lost!";
     } else if (computerChoice === "✌️" && userChoice === "✋") {
-      result = "Computer won";
+      result = "You lost!";
     } else  { result = "You won!"
     }
     resultDisplay.innerHTML = result
   }
-
-//   function updateResult() {
-//     if (computerChoice === userChoice) {
-//       result = "It's a draw";
-//     } else if (computerChoice === "rock" && userChoice === "scissors") {
-//       result = "Computer wins";
-//     } else if (computerChoice === "paper" && userChoice === "rock") {
-//       result = "Computer wins";
-//     } else if (computerChoice === "scissors" && userChoice === "paper") {
-//       result = "Computer wins";
-//     } else if (computerChoice === "scissors" && userChoice === "rock") {
-//       result = "You win";
-//     } else if (computerChoice === "rock" && userChoice === "paper") {
-//       result = "You win";
-//     } else if (computerChoice === "paper" && userChoice === "scissors") {
-//       result = "You win";
-//     }
-//     resultDisplay.innerHTML = result
-//   }
 
     
     // function updateResult() {

@@ -1,51 +1,110 @@
 
-
+* {
+    font-family: 
+}
 
 .game-display {
     display: flex;
     justify-content: center;
     align-items: center;
 
-   
 }
 
+body {
+    background-image: url("pictures/background1.jpg");
+    margin:0;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid;
+    flex-direction: column;
+    /* border: solid; */
+    box-shadow: 2px 5px rgba(163, 123, 128);
     height: 15rem;
     width: 25rem;
-    justify-content: center;
-    align-items: center;
     margin: 1rem;
+    background-color: rgba(124, 72, 132, 0.9);
+    /* border-color: antiquewhite; */
+    border-radius: 4rem;
+    color: antiquewhite
+    
+   
 }
+
+
 
 .button-container {
     display: flex;
     justify-content: center;
+    border-radius: 20%;
 }
 
 button {
     height: 10rem;
     width: 10rem;
-    margin: 1rem 1rem 0rem;
-    padding-bottom:;
+    margin: 2rem 1rem 4rem;
+    
     font-size: 70px;
+    border-radius: 20%;
+    background-color: white;
+    cursor:pointer;
+    
          
+}
+
+button:hover {
+    background-color: antiquewhite;
 }
 
 h1 {
     text-align: center;
-    margin: 5rem;
-    font-size: 40px;
-
+    font-size: 50px;
+    background-color: rgba(124, 72, 132, 0.9);
+    width:100%;
+    justify-content: center;
+    padding: 3rem 0rem 3rem;
+    border-radius: 3rem;
+    color:antiquewhite;
+    box-shadow: 2px 5px rgba(163, 123, 128, 0.645);
+    font-family: 
 }
-#instructions {
+
+
+h2 {
     text-align: center;
     font-size: 30px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 20rem;
+    /* to have it in the middle of the page */
+    margin-left: 39%;
+    box-shadow: 3px 6px rgba(163, 123, 128);
+    color: rgba(45, 58, 24, 0.779);
+}
+    
+
+h3 {
+    font-size: 40px;
+    padding-bottom: 1rem;
+    
+}
+
+.display-choice {
+    font-size: 60px;
+    margin:0;
+    
+}
+
+.vs {
+
+    color: rgba(45, 58, 24);
 }
 #result-display {
     font-size: 30px;
     text-align: center;
+    padding: 1rem;
+    max-width: 20rem;
+    
 }
