@@ -19,19 +19,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: solid; */
     box-shadow: 2px 5px rgba(163, 123, 128);
     height: 15rem;
     width: 25rem;
     margin: 1rem;
     background-color: rgba(124, 72, 132, 0.9);
-    /* border-color: antiquewhite; */
     border-radius: 4rem;
     color: antiquewhite
     
-   
 }
-
 
 
 .button-container {
@@ -43,12 +39,11 @@ body {
 button {
     height: 10rem;
     width: 10rem;
-    margin: 2rem 1rem 4rem;
-    
+    margin: 2rem 1rem 1rem;
     font-size: 70px;
     border-radius: 20%;
     background-color: white;
-    cursor:pointer;
+    cursor: pointer;
     
          
 }
@@ -67,44 +62,98 @@ h1 {
     border-radius: 3rem;
     color:antiquewhite;
     box-shadow: 2px 5px rgba(163, 123, 128, 0.645);
-    font-family: 
+    
 }
 
 
 h2 {
-    text-align: center;
-    font-size: 30px;
+    margin: 0 auto; /* this will center the element horizontally */
     background-color: antiquewhite;
     padding: 2rem;
     border-radius: 1rem;
-    max-width: 20rem;
+    max-width: 30rem;
     /* to have it in the middle of the page */
-    margin-left: 39%;
     box-shadow: 3px 6px rgba(163, 123, 128);
     color: rgba(45, 58, 24, 0.779);
+}
+
+.instructions {
+
+    font-size: 25px;
 }
     
 
 h3 {
     font-size: 40px;
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1rem;   
 }
 
 .display-choice {
-    font-size: 60px;
-    margin:0;
-    
+    font-size: 100px;
+    margin-top:-2rem;
+    margin-bottom: 1rem;
+  
 }
 
 .vs {
-
-    color: rgba(45, 58, 24);
+    color: rgba(45, 58, 24, 0.8);
 }
+
 #result-display {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     padding: 1rem;
-    max-width: 20rem;
+    max-width: 30rem;
+    margin-top:2rem;
     
+}
+
+@media (max-width: 600px) {
+
+h1 {
+
+padding: 1rem 0rem 1rem;
+font-size: 25px;
+
+}
+
+/* targetting: computer chose / you chose */
+h3 {
+
+    font-size: 17px;
+    padding-bottom: 0.5rem; 
+}
+
+h2 {
+    font-size: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 1rem; 
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+    margin: 0.5rem;
+}
+
+.choiceButton {
+    font-size: 25px;
+}
+
+#result-display {
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+    max-width: 35rem;
+}
+
+.container {
+    height: 11rem;
+    width: 11rem;
+}
+
+.vs {
+    font-size: 25px;
+}
 }

@@ -13,7 +13,14 @@
             <h1> Rock, Paper, Scissors</h1>
         </header>
 
-        <h2 id="instructions">CLICK ON A HAND TO START PLAYING</h2>
+        <h2 class="instructions">CLICK ON A HAND TO START PLAYING</h2>
+
+        <div class="button-container">
+            <button class="choiceButton" id="rock" value="✊"> ✊ </button>
+            <button class="choiceButton" id="paper" value="✋"> ✋</button>
+            <button class="choiceButton" id="scissors" value="✌️"> ✌️</button>
+            </div>
+
         <div class="game-display">
        
             <div class="container"> 
@@ -29,14 +36,10 @@
            
            
         </div>
-        <h2 id="result-display">Result:  <span id="resultDisplay"></span></h2>
+        <h2 id="result-display" class="result-display">Result:  <span id="resultDisplay"></span></h2>
     
      
-        <div class="button-container">
-        <button class="choiceButton" id="rock" value="✊"> ✊ </button>
-        <button class="choiceButton" id="paper" value="✋"> ✋</button>
-        <button class="choiceButton" id="scissors" value="✌️"> ✌️</button>
-        </div>
+       
      
         <script src="main.js"></script>
     </body>
