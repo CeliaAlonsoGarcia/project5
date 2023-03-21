@@ -9,3 +9,6 @@ I declared if statement outside a function so it was being called when the page 
 I wanted to change the words "rock, paper, scissors" for the emoji and i was struggling because I was targetting the id but then added the value to to the buttons to be the emoji and targetted the value instead.
 
 At first i only targetted with value the computer generated because it's the only won that was not working but then the if statement didn't work so I charged to both computuergenerated and userchoice were being targetted by value and the if statement works
+
+
+added delay to the generatecomputer choice an dresult and made them blank
