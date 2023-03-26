@@ -1,14 +1,19 @@
-# project5
-Game project
+# Planning
 
-I couldnt get the user choice to update so I did console.log to make sure the query slectors were working first of all and then the addEventlistener for click was working
-then i realised there was a type when selecting the buttons
+Before starting work on my game, I searched for similar games online to draw inspiration for the design. Then, I used pencil and paper to sketch out the desired layout and the different elements that would be included in the HTML and what each would do.
 
-I declared if statement outside a function so it was being called when the page loaded
+# Building
 
-I wanted to change the words "rock, paper, scissors" for the emoji and i was struggling because I was targetting the id but then added the value to to the buttons to be the emoji and targetted the value instead.
+Prior to starting the game's construction, I wrote the pseudocode, breaking down the game into smaller steps and considering how the user would interact with the page and what they would expect to see and when.
 
-At first i only targetted with value the computer generated because it's the only won that was not working but then the if statement didn't work so I charged to both computuergenerated and userchoice were being targetted by value and the if statement works
+# Debugging
 
+While building my game I had several issues:
 
-added delay to the generatecomputer choice an dresult and made them blank
+- Initially, I was unable to get the `user-choice` to update on the HTML. To solve this, I first checked that the `query selector`s were working and that the `addEventListener` for `click` was functioning. Using this process I found there was a typo when selecting the buttons.
+
+-I accidentally declared an `if` statement outside of a `function`, causing it to execute when the page loaded.
+
+-I tried to link images to the buttons instead of the words rock, paper, scissors to make the game more visually interesting but I found it hard to make it work with JS. In the end I found a way around it and used Emojis on the HTML.
+
+- Finally, I found that everything was happening at once and it was not very good for user interaction. I added a delay to the generate the `computer-choice` and `result` a second after the `user` picked their choice.
