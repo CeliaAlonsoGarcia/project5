@@ -1,160 +1,159 @@
-
 * {
-    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
- 
+  font-family: Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic,
+    Arial, sans-serif;
 }
 
 .game-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-    background-image: url("pictures/background1.jpg");
-    margin:0;
+  background-image: url("pictures/background1.jpg");
+  margin: 0;
 }
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 2px 5px rgba(163, 123, 128);
-    height: 15rem;
-    width: 25rem;
-    margin: 1rem;
-    background-color: rgba(124, 72, 132, 0.9);
-    border-radius: 4rem;
-    color: antiquewhite
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 5px rgba(163, 123, 128);
+  height: 15rem;
+  width: 25rem;
+  margin: 1rem;
+  background-color: rgba(124, 72, 132, 0.9);
+  border-radius: 4rem;
+  color: antiquewhite;
 }
 
-
 .button-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  border-radius: 20%;
 }
 
 button {
-    height: 10rem;
-    width: 10rem;
-    margin: 2rem 1rem 1rem;
-    font-size: 70px;
-    border-radius: 20%;
-    background-color: white;
-    cursor: pointer;
-    
-         
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem 1rem 1rem;
+  font-size: 70px;
+  border-radius: 20%;
+  background-color: white;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 h1 {
-    text-align: center;
-    font-size: 50px;
-    background-color: rgba(124, 72, 132, 0.9);
-    width:100%;
-    justify-content: center;
-    padding: 3rem 0rem 3rem;
-    border-radius: 3rem;
-    color:antiquewhite;
-    box-shadow: 2px 5px rgba(163, 123, 128, 0.645);
-    
+  text-align: center;
+  font-size: 50px;
+  background-color: rgba(124, 72, 132, 0.9);
+  width: 100%;
+  justify-content: center;
+  padding: 3rem 0rem 3rem;
+  border-radius: 3rem;
+  color: antiquewhite;
+  box-shadow: 2px 5px rgba(163, 123, 128, 0.645);
 }
 
-
 h2 {
-    margin: 0 auto; /* this will center the element horizontally */
-    background-color: antiquewhite;
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 30rem;
-    /* to have it in the middle of the page */
-    box-shadow: 3px 6px rgba(163, 123, 128);
-    color: rgba(45, 58, 24, 0.779);
+  margin: 0 auto; /* this will center the element horizontally */
+  background-color: antiquewhite;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 30rem;
+  /* to have it in the middle of the page */
+  box-shadow: 3px 6px rgba(163, 123, 128);
+  color: rgba(45, 58, 24, 0.779);
 }
 
 .instructions {
-
-    font-size: 25px;
+  font-size: 25px;
 }
-    
 
 h3 {
-    font-size: 40px;
-    padding-bottom: 1rem;   
+  font-size: 40px;
+  padding-bottom: 1rem;
 }
 
 .display-choice {
-    font-size: 100px;
-    margin-top:-2rem;
-    margin-bottom: 1rem;
-  
+  font-size: 80px;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
 }
 
 .vs {
-    color: rgba(45, 58, 24, 0.8);
+  color: rgba(45, 58, 24, 0.8);
 }
 
 #result-display {
-    font-size: 50px;
-    text-align: center;
-    padding: 1rem;
-    max-width: 30rem;
-    margin-top:2rem;
-    
+  font-size: 50px;
+  text-align: center;
+  padding: 1rem;
+  max-width: 30rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 600px) {
+  h1 {
+    padding: 1rem 0rem 1rem;
+    font-size: 25px;
+  }
 
-h1 {
+  /* targetting: computer chose / you chose */
+  h3 {
+    font-size: 15px;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
 
-padding: 1rem 0rem 1rem;
-font-size: 25px;
-
-}
-
-/* targetting: computer chose / you chose */
-h3 {
-
-    font-size: 17px;
-    padding-bottom: 0.5rem; 
-}
-
-h2 {
+  h2 {
     font-size: 15px;
     margin-left: 8%;
     margin-right: 8%;
-    padding: 1rem; 
-}
+    padding: 1rem;
+    text-align: center;
+  }
 
-button {
+  h2.instructions {
+    font-size: 15px;
+    margin-bottom: 2rem;
+  }
+
+  button {
     height: 4rem;
     width: 4rem;
     margin: 0.5rem;
-}
+  }
 
-.choiceButton {
+  .choiceButton {
     font-size: 25px;
-}
+  }
 
-#result-display {
+  #result-display {
     font-size: 20px;
     text-align: center;
     padding: 1rem;
     max-width: 35rem;
-}
+  }
 
-.container {
+  .container {
     height: 11rem;
     width: 11rem;
-}
+  }
 
-.vs {
-    font-size: 25px;
-}
+  .vs {
+    font-size: 20px;
+    margin: 0.5rem;
+  }
+
+  .display-choice {
+    font-size: 40px;
+    margin-top: 0.5rem;
+  }
 }
